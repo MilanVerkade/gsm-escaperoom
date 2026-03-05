@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet">
 </head>
-<img src="" alt="">
+<img src="Foto's/12.jpg" alt="The Last Chime">
 <body>
 <div class="container">
 <h1>THE LAST CHIME</h1>
