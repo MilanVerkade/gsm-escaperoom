@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escape Room</title>
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet">
 </head>
-<img src="Foto's/12.jpg" alt="The Last Chime">
+
 <body>
+<?php include 'nav.php'; ?>
 <div class="container">
+<img src="Foto's/12.jpg" alt="The Last Chime">
 <h1>THE LAST CHIME</h1>
 
 
