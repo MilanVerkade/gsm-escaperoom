@@ -1,5 +1,6 @@
 homepage = document.getElementById("container");
 video = document.getElementById("video");
+video.style.display = "none";
 
 function timer{
     timer = setInterval(10000);
