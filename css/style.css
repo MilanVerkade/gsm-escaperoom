@@ -25,3 +25,10 @@ body {
 .container img {
 	display: none;
 }
+
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: black;
+}
