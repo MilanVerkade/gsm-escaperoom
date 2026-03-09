@@ -1,10 +1,11 @@
 homepage = document.getElementById("container");
+videoContainer = document.getElementById("video-container");
 video = document.getElementById("video");
-video.style.display = "none";
+videoContainer.style.display = "none";
 
 function openVideo() {
     homepage.style.display = "none";
-    document.getElementById("video").style.display = "block";
+    videoContainer.style.display = "block";
     alert("Video will start in 10 seconds");
 }
 

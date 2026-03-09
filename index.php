@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/video.js"></script>
+  
 </head>
 
 <body>
@@ -25,9 +25,10 @@ CHIME
 
 
 </div>
-<div class="video">
-    <video id="video" src="/Video/Person_walking_into_door_d225677bb9.mp4"></video>
+<div class="video" id="video-container">
+    <video id="video" src="Video/Person_walking_into_door_d225677bb9.mp4" controls autoplay></video>
 </div>
+<script src="js/video.js"></script>
 </body>
 
 </html>
