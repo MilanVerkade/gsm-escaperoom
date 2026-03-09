@@ -17,7 +17,7 @@
 <div class="container">
 <img src="Foto's/12.jpg" alt="The Last Chime">
 <h1>THE LAST CHIME</h1>
-<button>Start The Ticking</button>
+<button onclick="openVideo()">Start The Ticking</button>
 
 
 </div>
