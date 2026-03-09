@@ -26,7 +26,7 @@ CHIME
 
 </div>
 <div class="video" id="video-container">
-    <video id="video" src="Video/Person_walking_into_door_d225677bb9.mp4" controls autoplay></video>
+    <video id="video" src="Video/Person_walking_into_door_d225677bb9.mp4" controls></video>
 </div>
 <script src="js/video.js"></script>
 </body>
