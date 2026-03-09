@@ -16,7 +16,11 @@
 <?php include 'nav.php'; ?>
 <div class="container">
 <img src="Foto's/12.jpg" alt="The Last Chime">
-<h1>THE LAST CHIME</h1>
+<h1>
+THE <br>
+LAST <br>
+CHIME
+</h1>
 <button>Start The Ticking</button>
 
 
