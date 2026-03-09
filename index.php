@@ -14,7 +14,7 @@
 
 <body>
 <?php include 'nav.php'; ?>
-<div class="container">
+<div class="container" id="container">
 <img src="Foto's/12.jpg" alt="The Last Chime">
 <h1>
 THE <br>
@@ -26,7 +26,7 @@ CHIME
 
 </div>
 <div class="video">
-    <video src="/Video/Person_walking_into_door_d225677bb9.mp4"></video>
+    <video id="video" src="/Video/Person_walking_into_door_d225677bb9.mp4"></video>
 </div>
 </body>
 

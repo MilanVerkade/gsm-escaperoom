@@ -9,6 +9,6 @@ function timer{
 function openVideo() {
     homepage.style.display = "none";
     document.getElementById("video").style.display = "block";
-
+    alert("Video will start in 10 seconds");
     }
 
