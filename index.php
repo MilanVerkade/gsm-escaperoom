@@ -21,7 +21,7 @@ THE <br>
 LAST <br>
 CHIME
 </h1>
-<button onclick="openVideo()">Start The Ticking</button>
+<button id="start-button"->Start The Ticking</button>
 
 
 </div>
@@ -31,4 +31,4 @@ CHIME
 <script src="js/video.js"></script>
 </body>
 
-</html>
+</html>/;p0o99
