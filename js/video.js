@@ -12,7 +12,6 @@ function openVideo() {
     videoContainer.style.display = "block";
     video.play();
     nav.style.display = "none";
-    function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.webkitRequestFullscreen) { /* Safari */
@@ -21,5 +20,5 @@ function openVideo() {
     elem.msRequestFullscreen();
   }
 }
-}
+
 

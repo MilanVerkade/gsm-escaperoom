@@ -21,7 +21,7 @@ THE <br>
 LAST <br>
 CHIME
 </h1>
-<button id="start-button"->Start The Ticking</button>
+<button id="start-button">Start The Ticking</button>
 
 
 </div>
