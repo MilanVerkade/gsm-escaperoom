@@ -5,6 +5,11 @@ video = document.getElementById("video");
 videoContainer.style.display = "none";
 start = document.getElementById("start-button");
 start.addEventListener("click", openVideo);
+    if (video.requestFullscreen) {  
+        video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) { /* Safari */
+        video.webkitRequestFullscreen();
+    }
 
 function openVideo() {
     homepage.style.display = "none";
@@ -13,11 +18,7 @@ function openVideo() {
     document.body.classList.add("video-playing");
     video.play();
     
-    if (video.requestFullscreen) {  
-        video.requestFullscreen();
-    } else if (video.webkitRequestFullscreen) { /* Safari */
-        video.webkitRequestFullscreen();
-    }
+
 }
 
 
