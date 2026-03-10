@@ -13,8 +13,8 @@
 </head>
 
 <body>
-<?php include 'nav.php'; ?>
 <div class="container" id="container">
+<?php include 'nav.php'; ?>
 <img src="Foto's/12.jpg" alt="The Last Chime">
 <h1>
 THE <br>
