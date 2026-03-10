@@ -4,7 +4,7 @@ videoContainer = document.getElementById("video-container");
 video = document.getElementById("video");
 videoContainer.style.display = "none";
 start = document.getElementById("start-button");
-
+var elem = document.documentElement;
 start.addEventListener("click", openVideo);
 
 function openVideo() {
