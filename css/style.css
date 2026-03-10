@@ -1,9 +1,9 @@
-
 body {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
-	overflow: hidden;
+	width: 100vw; /* Zorg ervoor dat de breedte ook 100% is */
+	overflow: hidden; /* Voorkom scrollbars */
 	background: url("../Foto's/12.jpg") no-repeat center center/cover;
 	background-color: black;
 }
@@ -99,8 +99,8 @@ body::before {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw; /* Zorg ervoor dat de breedte 100% is */
+	height: 100vh; /* Zorg ervoor dat de hoogte 100% is */
 	z-index: 999;
 	overflow: hidden;
 }
