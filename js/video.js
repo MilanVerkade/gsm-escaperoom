@@ -20,4 +20,12 @@ function openVideo() {
     }
 }
 
+function senttimer() {
+    timer = setInterval(volgende, 10000);
+}
+
+function volgende() {
+    window.location.href = "rooms/room_1.php";
+}
+
 
