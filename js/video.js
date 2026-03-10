@@ -11,5 +11,6 @@ function openVideo() {
     homepage.style.display = "none";
     videoContainer.style.display = "block";
     video.play();
+    nav.style.display = "none";
 }
 
