@@ -1,4 +1,5 @@
 homepage = document.getElementById("container");
+nav = document.getElementById("nav");
 videoContainer = document.getElementById("video-container");
 video = document.getElementById("video");
 videoContainer.style.display = "none";
