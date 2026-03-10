@@ -18,6 +18,7 @@ function openVideo() {
     } else if (video.webkitRequestFullscreen) { /* Safari */
         video.webkitRequestFullscreen();
     }
+    senttimer();
 }
 
 function senttimer() {
