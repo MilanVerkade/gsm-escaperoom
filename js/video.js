@@ -4,19 +4,20 @@ videoContainer = document.getElementById("video-container");
 video = document.getElementById("video");
 videoContainer.style.display = "none";
 start = document.getElementById("start-button");
-var elem = document.documentElement;
 start.addEventListener("click", openVideo);
 
 function openVideo() {
     homepage.style.display = "none";
-    videoContainer.style.display = "block";
-    video.play();
     nav.style.display = "none";
-  if (elem.requestFullscreen) {  
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  }
+    videoContainer.style.display = "block";
+    document.body.classList.add("video-playing");
+    video.play();
+    
+    if (video.requestFullscreen) {  
+        video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) { /* Safari */
+        video.webkitRequestFullscreen();
+    }
 }
 
 
