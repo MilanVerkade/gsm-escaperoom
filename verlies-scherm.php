@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="verliesFoto">
-        <img src="Foto's/verlies.png" alt="Verlies scherm">
-    </div>
+<div class="verliesFoto">
+    <img src="Foto's/verlies.png" alt="Verlies scherm">
+</div>
 </body>
 </html> 
