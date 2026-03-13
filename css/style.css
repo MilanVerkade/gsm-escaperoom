@@ -37,7 +37,7 @@ body.video-playing::before {
 
 .container h1 {
 	margin: 0;
-	font-size: 3em;
+	font-size: 7em;
 	color: white;
 }
 
@@ -48,7 +48,7 @@ body.video-playing::before {
 .container button {
 	padding: 15px 40px;
 	font-size: 1.2em;
-	font-family: 'Alfa Slab One', cursive;
+	font-family: 'Abril Fatface', cursive;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.7);
 	border: 2px solid white;
@@ -70,7 +70,7 @@ body.video-playing::before {
 #nav {
 	position: absolute;
 	top: 10px;
-	left: 20px;
+	left: 0px;
 	z-index: 101;
 }
 
@@ -85,6 +85,7 @@ body.video-playing::before {
 	padding: 0;
 	display: flex;
 	gap: 30px;
+	width: calc(100vw - 40px);
 }
 
 #nav li {
@@ -92,9 +93,18 @@ body.video-playing::before {
 	padding: 0;
 }
 
+#nav li:last-child {
+	margin-left: auto;
+	margin-right: 1vw;
+}
+
+#nav li:last-child a {
+	color: #880606;
+}
+
 #nav a {
-	color: white;
-	font-size: 1.1em;
+	color: #C9C9C9;
+	font-size: 3.8em;
 	font-weight: bold;
 	text-decoration: none;
 }
