@@ -1,5 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -30,4 +36,10 @@ body {
     max-width: 90vw;
     max-height: 90vh;
     object-fit: contain;
+}
+
+.informatiebackgroud{
+    background-color: #1B1717;
+    color: white;
+    height: 100vh;
 }
