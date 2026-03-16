@@ -1,8 +1,8 @@
 <?php
 $server = "localhost"; 
-$username = "root";
+$username = "st1739531419";
 $password = "";  //macbook gebruikers vullen bij wachtwoord "root" in.
-$db = "escape-room"; //pas dit aan indien de naam van jullie database anders is
+$db = "st1739531419"; //pas dit aan indien de naam van jullie database anders is
 
 try {
   $db_connection = new PDO("mysql:host=$server; dbname=$db", $username, $password);
