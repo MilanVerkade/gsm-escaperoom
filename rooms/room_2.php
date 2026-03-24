@@ -20,28 +20,19 @@ try {
 </head>
 
 <body>
+<div class="room2-container1" id="room2-container1">
 
-  <div class="container">
-    <?php foreach ($riddles as $index => $riddle) : ?>
-    <div class="box box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"
-      data-index="<?php echo $index; ?>" data-riddle="<?php echo htmlspecialchars($riddle['riddle']); ?>"
-      data-answer="<?php echo htmlspecialchars($riddle['answer']); ?>">
-      Box <?php echo $index + 1; ?>
-    </div>
-    <?php endforeach; ?>
-  </div>
+</div>
 
-  <section class="overlay" id="overlay" onclick="closeModal()"></section>
+<div class="room2-container2">
 
-  <section class="modal" id="modal">
-    <h2>Escape Room Vraag</h2>
-    <p id="riddle"></p>
-    <input type="text" id="answer" placeholder="Typ je antwoord">
-    <button onclick="checkAnswer()">Verzenden</button>
-    <p id="feedback"></p>
-  </section>
+</div>
 
-  <script src="../js/app.js"></script>
+<div class="room2-container3">
+
+</div>
+
+  <script src="../js/room2.js"></script>
 
 </body>
 

@@ -86,3 +86,30 @@ body {
 	font-weight: bold;
 	text-decoration: none;
 }
+
+.room2-container1{
+    background-image: url('../Fotos/escaperoom2/image.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.room2-container2{
+    background-image: url('../Fotos/escaperoom2/image\ copy.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.room2-container3{
+    background-image: url('../Fotos/escaperoom2/image\ copy\ 2.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
