@@ -2,7 +2,7 @@
 $server = "localhost"; 
 $username = "root";
 $password = "root";  //macbook gebruikers vullen bij wachtwoord "root" in.
-$db = ""; //pas dit aan indien de naam van jullie database anders is
+$db = "project"; //pas dit aan indien de naam van jullie database anders is
 
 try {
   $db_connection = new PDO("mysql:host=$server; dbname=$db", $username, $password);
