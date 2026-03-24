@@ -1,8 +1,8 @@
 <?php
 $server = "localhost"; 
-$username = "st1739531418";
-$password = "";  //macbook gebruikers vullen bij wachtwoord "root" in.
-$db = "st1739531418"; //pas dit aan indien de naam van jullie database anders is
+$username = "root";
+$password = "root";  //macbook gebruikers vullen bij wachtwoord "root" in.
+$db = ""; //pas dit aan indien de naam van jullie database anders is
 
 try {
   $db_connection = new PDO("mysql:host=$server; dbname=$db", $username, $password);
