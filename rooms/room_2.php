@@ -24,11 +24,11 @@ try {
 
 </div>
 
-<div class="room2-container2">
+<div class="room2-container2" id="room2-container2">
 
 </div>
 
-<div class="room2-container3">
+<div class="room2-container3" id="room2-container3">
 
 </div>
 
