@@ -29,9 +29,13 @@ try {
 </div>
 
 <div class="room2-container3" id="room2-container3">
-
-</div>
-
+<div class="klik-div">
+      <div id="overlay" class="overlay">
+        <div class="popup">
+            <img src="../Fotos/escaperoom2/afbeelding (1).png" alt="Foto" />
+        </div>
+      </div>
+    </div>
   <script src="../js/room2.js"></script>
 
 </body>
