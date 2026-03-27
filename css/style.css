@@ -104,19 +104,20 @@
 .room2-container3{
     background-image: url('../Fotos/escaperoom2/image\ copy\ 2.png');
     background-size: cover;
-
+    background-position: center;
     height: 100vh;
-
+    position: relative;
 }
 
 .klik-div {
     width: 400px;
     height: 500px;
     
-    margin-left: 12vh;
+    position: absolute;
+    left: 80px;
+    top: 150px;
     background-color: red;
     cursor: pointer;
-    position: relative;
     
 }
 
