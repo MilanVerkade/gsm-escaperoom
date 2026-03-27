@@ -104,9 +104,11 @@
 .room2-container3{
     background-image: url('../Fotos/escaperoom2/image\ copy\ 2.png');
     background-size: cover;
-
+    background-position: center;
     height: 100vh;
-
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
 }
 
 .klik-div {
