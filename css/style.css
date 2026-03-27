@@ -3,11 +3,7 @@
     padding: 0;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+ 
 
 .winFoto,
 .verliesFoto {
@@ -108,19 +104,17 @@ body {
 .room2-container3{
     background-image: url('../Fotos/escaperoom2/image\ copy\ 2.png');
     background-size: cover;
-    background-position: center;
+
     height: 100vh;
-    display: flex;
-    justify-content: center;
+
 }
 
 .klik-div {
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 500px;
+    
+    margin-left: 12vh;
     background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     
 }
