@@ -1,8 +1,17 @@
-*{
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+*
+{
     margin: 0;
     padding: 0;
 }
-
  
 
 .winFoto,
@@ -143,4 +152,30 @@
 .popup img {
     width: 100%;
     max-width: 500px;
+}
+
+.room3-container1{
+    background-image: url('../Fotos/ecaperoom3/image\ copy.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.room3-container2{
+    background-image: url('../Fotos/escaperoom3/image.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.room3-container3{
+    background-image: url('../Fotos/escaperoom3/image\ copy\ 2.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
 }
