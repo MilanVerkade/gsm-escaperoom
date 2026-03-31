@@ -29,7 +29,7 @@ try {
 </div>
 
 <div class="room2-container3" id="room2-container3">
-<div class="klik-div">
+<div class="klik-div3-1">
       <div id="overlay" class="overlay">
         <div class="popup">
             <img src="../Fotos/escaperoom2/afbeelding (1).png" alt="Foto" />

@@ -22,7 +22,7 @@ function openRoom3() {
 }
 
 // Haal de elementen op
-const klikDiv = document.querySelector('.klik-div');
+const klikDiv = document.querySelector('.klik-div3-1');
 const overlay = document.getElementById('overlay');
 const popup = document.querySelector('.popup');
 
