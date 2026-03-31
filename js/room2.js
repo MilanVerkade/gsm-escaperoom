@@ -36,6 +36,7 @@ overlay.addEventListener('click', (event) => {
     // Als het doel van de klik buiten de foto ligt (en niet op de popup), sluit de overlay
     if (event.target === overlay) {
         overlay.style.display = 'none'; // Verberg de overlay
+        event.stopPropagation();
     }
 });
 
