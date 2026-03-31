@@ -33,8 +33,13 @@ klikDiv.addEventListener('click', () => {
 
 // Wanneer je op de overlay zelf (buiten de foto) klikt, sluit de overlay
 overlay.addEventListener('click', (event) => {
-    // Als het doel van de klik buiten de foto ligt, sluit de overlay
+    // Als het doel van de klik buiten de foto ligt (en niet op de popup), sluit de overlay
     if (event.target === overlay) {
         overlay.style.display = 'none'; // Verberg de overlay
     }
+});
+
+// Zorg ervoor dat klikken op de popup zelf het sluiten niet voorkomt
+popup.addEventListener('click', (event) => {
+    event.stopPropagation(); // Voorkom dat de klik op de popup de overlay sluit
 });
