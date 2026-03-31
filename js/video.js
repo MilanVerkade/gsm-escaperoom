@@ -26,7 +26,7 @@ function senttimer() {
 }
 
 function volgende() {
-    window.location.href = "rooms/room_2.php";
+    window.location.href = "rooms/room_1.php";
 }
 
 
