@@ -36,6 +36,13 @@ try {
         </div>
       </div>
     </div>
+<div class="klik-div3-2">
+      <div id="overlay" class="overlay">
+        <div class="popup">
+            <img src="" alt="Foto" />
+        </div>
+      </div>
+    </div>
   <script src="../js/room2.js"></script>
 
 </body>
