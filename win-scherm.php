@@ -8,8 +8,8 @@
 </head>
 <body>
 <div class="winFoto">
-<img src="Foto's/groen.png" alt="">
-<img src="Foto's/win-foto.png" alt="">
+<img src="Fotos/groen.png" alt="">
+<img src="Fotos/win-foto.png" alt="">
 </div>
 </body>
 </html>
