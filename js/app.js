@@ -1,3 +1,39 @@
+// Spiegel raadsel room 3: code-invoer en hint
+document.addEventListener('DOMContentLoaded', function () {
+  var answerInput = document.getElementById('mirror-answer');
+  var submitBtn = document.getElementById('mirror-submit');
+  var feedback = document.getElementById('mirror-feedback');
+  var hintBtn = document.getElementById('mirror-hint');
+  var hintText = document.getElementById('mirror-hint-text');
+  var juisteCode = '5415';
+  var container3 = document.getElementById('room3-container3');
+  var container2 = document.getElementById('room3-container2');
+
+  if (submitBtn && answerInput && feedback && container2 && container3) {
+    submitBtn.addEventListener('click', function () {
+      if (answerInput.value.trim() === juisteCode) {
+        feedback.style.color = 'green';
+        feedback.textContent = 'Correct! Je mag door naar het volgende raadsel.';
+        setTimeout(function() {
+          container3.style.display = 'none';
+          container2.style.display = 'flex';
+        }, 1000);
+      } else {
+        feedback.style.color = 'red';
+        feedback.textContent = 'Fout, probeer opnieuw!';
+      }
+    });
+    answerInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') submitBtn.click();
+    });
+  }
+  if (hintBtn && hintText) {
+    hintBtn.addEventListener('click', function () {
+      hintText.textContent = 'Om de toekomst te zien, kijken we vaak vooruit. Maar deze waarheid eist dat je jouw rug toekeert naar datgene wat je probeert te lezen.';
+      hintText.style.display = 'block';
+    });
+  }
+});
 // Deze functie opent de modal en toont de vraag
 function openModal(index) {
   // Zoek het element met de class 'box' en het bijbehorende data-index
@@ -56,5 +92,25 @@ function checkAnswer() {
     feedback.style.color = 'red';
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  var timerDivs = document.querySelectorAll('#timer');
+  if (!timerDivs.length) return;
+  var totalSeconds = 30 * 60;
+  function updateTimer() {
+    var min = Math.floor(totalSeconds / 60);
+    var sec = totalSeconds % 60;
+    timerDivs.forEach(function(timerDiv) {
+      timerDiv.textContent = (min < 10 ? '0' : '') + min + ':' + (sec < 10 ? '0' : '') + sec;
+    });
+    if (totalSeconds <= 0) {
+      window.location.href = '../verlies-scherm.php';
+    } else {
+      totalSeconds--;
+      setTimeout(updateTimer, 1000);
+    }
+  }
+  updateTimer();
+});
 
 

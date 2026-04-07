@@ -8,8 +8,8 @@
 </head>
 <body>
 <div class="verliesFoto">
-    <img src="Foto's/rood.png" alt="Verlies scherm">
-    <img src="Foto's/verlies-foto.png" alt="">
+    <img src="Fotos/rood.png" alt="Verlies scherm">
+    <img src="Fotos/verlies-foto.png" alt="">
 </div>
 </body>
 </html> 

@@ -162,6 +162,7 @@ html, body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .room3-container2{
@@ -169,8 +170,9 @@ html, body {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
+    align-items: center;
 }
 
 .room3-container3{
@@ -179,4 +181,7 @@ html, body {
     background-position: center;
     height: 100vh;
     position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }

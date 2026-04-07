@@ -20,9 +20,11 @@ try {
 </head>
 
 <body>
+
   <h1>Team: ...</h1>
 
-  <div class="container">
+  <div class="container" style="position:relative;">
+    <div id="timer" style="position:absolute; top:20px; right:40px; font-size:2em; font-weight:bold; color:#b00; background:rgba(255,255,255,0.7); padding:8px 20px; border-radius:10px; z-index:20;">30:00</div>
     <?php foreach ($riddles as $index => $riddle) : ?>
     <div class="box box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"
       data-index="<?php echo $index; ?>" data-riddle="<?php echo htmlspecialchars($riddle['riddle']); ?>"
