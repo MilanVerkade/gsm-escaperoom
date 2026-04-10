@@ -1,5 +1,6 @@
 // Spiegel raadsel room 3: code-invoer en hint
 document.addEventListener('DOMContentLoaded', function () {
+  // Container 1 setup
   var answerInput = document.getElementById('mirror-answer');
   var submitBtn = document.getElementById('mirror-submit');
   var feedback = document.getElementById('mirror-feedback');
@@ -31,6 +32,35 @@ document.addEventListener('DOMContentLoaded', function () {
     hintBtn.addEventListener('click', function () {
       hintText.textContent = 'Om de toekomst te zien, kijken we vaak vooruit. Maar deze waarheid eist dat je jouw rug toekeert naar datgene wat je probeert te lezen.';
       hintText.style.display = 'block';
+    });
+  }
+
+  // Container 2 setup
+  var answerInput2 = document.getElementById('mirror-answer-2');
+  var submitBtn2 = document.getElementById('mirror-submit-2');
+  var feedback2 = document.getElementById('mirror-feedback-2');
+  var hintBtn2 = document.getElementById('mirror-hint-2');
+  var hintText2 = document.getElementById('mirror-hint-text-2');
+  var juisteCode2 = '5121926';
+
+  if (submitBtn2 && answerInput2 && feedback2) {
+    submitBtn2.addEventListener('click', function () {
+      if (answerInput2.value.trim() === juisteCode2) {
+        feedback2.style.color = 'green';
+        feedback2.textContent = 'Correct! Goed gedaan!';
+      } else {
+        feedback2.style.color = 'red';
+        feedback2.textContent = 'Fout, probeer opnieuw!';
+      }
+    });
+    answerInput2.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') submitBtn2.click();
+    });
+  }
+  if (hintBtn2 && hintText2) {
+    hintBtn2.addEventListener('click', function () {
+      hintText2.textContent = 'De kalender vertelt de dagen, maar de mok vertelt de waarheid.';
+      hintText2.style.display = 'block';
     });
   }
 });
@@ -96,7 +126,9 @@ function checkAnswer() {
 document.addEventListener('DOMContentLoaded', function () {
   var timerDivs = document.querySelectorAll('#timer');
   if (!timerDivs.length) return;
-  var totalSeconds = 30 * 60;
+  var storedSeconds = localStorage.getItem('timerSeconds');
+  var totalSeconds = storedSeconds ? parseInt(storedSeconds) : 30 * 60;
+  
   function updateTimer() {
     var min = Math.floor(totalSeconds / 60);
     var sec = totalSeconds % 60;
@@ -104,9 +136,11 @@ document.addEventListener('DOMContentLoaded', function () {
       timerDiv.textContent = (min < 10 ? '0' : '') + min + ':' + (sec < 10 ? '0' : '') + sec;
     });
     if (totalSeconds <= 0) {
+      localStorage.removeItem('timerSeconds');
       window.location.href = '../verlies-scherm.php';
     } else {
       totalSeconds--;
+      localStorage.setItem('timerSeconds', totalSeconds);
       setTimeout(updateTimer, 1000);
     }
   }

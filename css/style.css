@@ -264,26 +264,24 @@ html, body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 .room3-container2{
-    background-image: url('../Fotos/escaperoom3/image.png');
+    background-image: url('../Fotos/ecaperoom3/image.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
-    display: none;
+    display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 .room3-container3{
-    background-image: url('../Fotos/escaperoom3/image\ copy\ 2.png');
+    background-image: url('../Fotos/escaperoom3/imagecopy2.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
-    position: relative;
-    display: none;
+    display: flex;
     justify-content: center;
-    align-items: center;
 }
