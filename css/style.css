@@ -187,7 +187,6 @@ html, body {
     position: absolute;
     left: 150px;
     top: 108px;
-    cursor: pointer;
 }
 
 .klik-div3-2 {
@@ -197,7 +196,7 @@ html, body {
     position: absolute;
     left: 85vw;
     top: 16vh;
-    cursor: pointer;
+
 }
 
 .klik-div3-3 {

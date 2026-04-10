@@ -1,7 +1,7 @@
 room1 = document.getElementById("room2-container1");
 room2 = document.getElementById("room2-container2");
 room3 = document.getElementById("room2-container3");
-openRoom3()
+openRoom2()
 
 function openRoom1() {
     room1.style.display = "block";
@@ -21,7 +21,9 @@ function openRoom3() {
     room3.style.display = "block";
 }
 
-// Haal de elementen op
+
+
+// r3
 const klikDiv = document.querySelector('.klik-div3-1');
 const klikDiv2 = document.querySelector('.klik-div3-2');
 const klikDiv3 = document.querySelector('.klik-div3-3');
