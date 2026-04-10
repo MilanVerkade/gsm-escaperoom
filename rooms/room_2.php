@@ -46,6 +46,7 @@ try {
       </div>
     </div>
   </div>
+  <div class="klik-div3-3">
 </div>
 <script src="../js/room2.js"></script>
 <script src="../js/app.js"></script>

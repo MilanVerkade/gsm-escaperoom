@@ -24,6 +24,7 @@ function openRoom3() {
 // Haal de elementen op
 const klikDiv = document.querySelector('.klik-div3-1');
 const klikDiv2 = document.querySelector('.klik-div3-2');
+const klikDiv3 = document.querySelector('.klik-div3-3');
 const overlay = document.getElementById('overlay');
 const overlay2 = document.getElementById('overlay2');
 const popup = document.querySelector('.popup');
@@ -68,3 +69,8 @@ popup2.addEventListener('click', (event) => {
 popup.addEventListener('click', (event) => {
     event.stopPropagation(); // Voorkom dat de klik op de popup de overlay sluit
 });
+
+klikDiv3.addEventListener('click', () => {
+    window.location.href = "room_3.php";
+});
+

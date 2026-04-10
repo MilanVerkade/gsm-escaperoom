@@ -139,6 +139,14 @@ html, body {
     cursor: pointer;
 }
 
+.klik-div3-3 {
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    left: 48vw;
+    top: 73vh;
+}
+
 
 .overlay {
     display: none; /* Verbergen de overlay standaard */
