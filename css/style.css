@@ -1,3 +1,64 @@
+/* Timer styling voor room 3 */
+.timer {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #b00;
+    background: rgba(255,255,255,0.7);
+    padding: 8px 20px;
+    border-radius: 10px;
+    z-index: 20;
+}
+
+.mirror-box {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,0.85);
+    padding: 24px 32px;
+    border-radius: 16px;
+    min-width: 320px;
+    text-align: center;
+}
+
+.mirror-input {
+    font-size: 1.2em;
+    padding: 6px 12px;
+    width: 120px;
+    text-align: center;
+}
+
+.mirror-btn {
+    font-size: 1.1em;
+    margin-left: 10px;
+    border-radius: 8px;
+    padding: 6px 16px;
+    border: none;
+    background: #e0e0e0;
+    color: #222;
+    cursor: pointer;
+}
+.mirror-btn.hint {
+    margin-left: 20px;
+}
+.mirror-btn:hover {
+    background: #d1d1d1;
+}
+
+.mirror-feedback {
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+}
+.mirror-hint-text {
+    margin-top: 10px;
+    color: #333;
+    display: none;
+    font-style: italic;
+}
 
 html, body {
     height: 100%;
