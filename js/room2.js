@@ -21,6 +21,32 @@ function openRoom3() {
     room3.style.display = "block";
 }
 
+// r2
+const klikDiv5 = document.querySelector('.klik-div2-1');
+const overlay5 = document.getElementById('overlay5');
+const popup5 = document.querySelector('.popup5');
+overlay5.style.display = 'none'; // Verberg de overlay
+
+// Wanneer je op de klikDiv klikt, toon de overlay
+klikDiv5.addEventListener('click', () => {
+    overlay5.style.display = 'flex'; // Toon de overlay
+});
+
+// Wanneer je op de overlay zelf (buiten de foto) klikt, sluit de overlay
+overlay5.addEventListener('click', (event) => {
+    // Als het doel van de klik buiten de foto ligt (en niet op de popup), sluit de overlay
+    if (event.target === overlay5) {
+        overlay5.style.display = 'none'; // Verberg de overlay
+        event.stopPropagation();
+    }
+});
+
+// Zorg ervoor dat klikken op de popup zelf het sluiten niet voorkomt
+popup5.addEventListener('click', (event) => {
+    event.stopPropagation(); // Voorkom dat de klik op de popup de overlay sluit
+});
+
+
 
 
 // r3
