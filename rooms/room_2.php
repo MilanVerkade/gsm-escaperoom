@@ -23,6 +23,7 @@ try {
 
 <div class="room2-container1" id="room2-container1" style="position:relative;">
   <div id="timer" style="position:absolute; top:20px; right:40px; font-size:2em; font-weight:bold; color:#b00; background:rgba(255,255,255,0.7); padding:8px 20px; border-radius:10px; z-index:20;">30:00</div>
+
 </div>
 
 <div class="room2-container2" id="room2-container2" style="position:relative;">
@@ -39,9 +40,9 @@ try {
     </div>
   </div>
   <div class="klik-div3-2">
-    <div id="overlay" class="overlay">
-      <div class="popup">
-        <img src="" alt="Foto" />
+    <div id="overlay2" class="overlay2">
+      <div class="popup2">
+        <img src="../Fotos/escaperoom2/imagecopy3.png" alt="Foto" />
       </div>
     </div>
   </div>
