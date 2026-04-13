@@ -44,6 +44,10 @@ try {
     <p id="feedback"></p>
   </section>
 
+  <script>
+    // Reset de timer voor room 1 (de eerste room)
+    localStorage.removeItem('timerSeconds');
+  </script>
   <script src="../js/app.js"></script>
 
 </body>
