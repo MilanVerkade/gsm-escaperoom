@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (submitBtn && answerInput && feedback && container2 && container3) {
     submitBtn.addEventListener('click', function () {
       if (answerInput.value.trim() === juisteCode) {
-        feedback.style.color = 'green';
-        feedback.textContent = 'Correct! Je mag door naar het volgende raadsel.';
+        openRoom2();
         setTimeout(function() {
           container3.style.display = 'none';
           container2.style.display = 'flex';
@@ -46,8 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (submitBtn2 && answerInput2 && feedback2) {
     submitBtn2.addEventListener('click', function () {
       if (answerInput2.value.trim() === juisteCode2) {
-        feedback2.style.color = 'green';
-        feedback2.textContent = 'Correct! Goed gedaan!';
+        openRoom3()
       } else {
         feedback2.style.color = 'red';
         feedback2.textContent = 'Fout, probeer opnieuw!';
