@@ -9,7 +9,7 @@
 <body>
 <div class="winFoto">
 <img src="Fotos/groen.png" alt="">
-<img src="Fotos/win-foto.png" alt="">
+<img src="Fotos/briefwin.png" alt="">
 </div>
 </body>
 </html>

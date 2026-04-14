@@ -61,6 +61,34 @@ document.addEventListener('DOMContentLoaded', function () {
       hintText2.style.display = 'block';
     });
   }
+
+  // Container 3 setup
+  var answerInput3 = document.getElementById('mirror-answer-3');
+  var submitBtn3 = document.getElementById('mirror-submit-3');
+  var feedback3 = document.getElementById('mirror-feedback-3');
+  var hintBtn3 = document.getElementById('mirror-hint-3');
+  var hintText3 = document.getElementById('mirror-hint-text-3');
+  var juisteCode3 = '17';
+
+  if (submitBtn3 && answerInput3 && feedback3) {
+    submitBtn3.addEventListener('click', function () {
+      if (answerInput3.value.trim() === juisteCode3) {
+        window.location.href = '../win-scherm.php';
+      } else {
+        feedback3.style.color = 'red';
+        feedback3.textContent = 'Fout, probeer opnieuw!';
+      }
+    });
+    answerInput3.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') submitBtn3.click();
+    });
+  }
+  if (hintBtn3 && hintText3) {
+    hintBtn3.addEventListener('click', function () {
+      hintText3.textContent = 'Tel de hulpmiddelen en volg de krabbels op de bodem.';
+      hintText3.style.display = 'block';
+    });
+  }
 });
 // Deze functie opent de modal en toont de vraag
 function openModal(index) {
