@@ -1,7 +1,7 @@
 room1 = document.getElementById("room2-container1");
 room2 = document.getElementById("room2-container2");
 room3 = document.getElementById("room2-container3");
-openRoom2()
+openRoom3()
 
 function openRoom1() {
     room1.style.display = "block";
