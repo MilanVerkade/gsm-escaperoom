@@ -22,7 +22,7 @@ try {
 
 <body>
 
-<div class="room3-container1" id="room3-container1" style="position:relative;">
+<div class="room3-container1" id="room3-container1">
   <div class="timer" id="timer">30:00</div>
   <div class="mirror-box">
     <input type="text" id="mirror-answer" placeholder="Voer de code in" maxlength="10" class="mirror-input" autocomplete="off">
@@ -36,7 +36,7 @@ try {
 
 </div>
 
-<div class="room3-container2" id="room3-container2" style="position:relative;">
+<div class="room3-container2" id="room3-container2">
   <div class="timer" id="timer">30:00</div>
   <div class="mirror-box">
     <input type="text" id="mirror-answer-2" placeholder="Voer de code in" maxlength="10" class="mirror-input" autocomplete="off">
@@ -47,8 +47,8 @@ try {
   </div>
 </div>
 
-<div class="room3-container3" id="room3-container3" style="position:relative;">
-  <div id="timer" style="position:absolute; top:20px; right:40px; font-size:2em; font-weight:bold; color:#b00; background:rgba(255,255,255,0.7); padding:8px 20px; border-radius:10px; z-index:20;">30:00</div>
+<div class="room3-container3" id="room3-container3">
+  <div id="timer">30:00</div>
   <div class="mirror-box">
     <input type="text" id="mirror-answer-3" placeholder="Voer de code in" maxlength="10" class="mirror-input" autocomplete="off">
     <button id="mirror-submit-3" class="mirror-btn">Antwoord</button>

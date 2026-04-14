@@ -295,7 +295,7 @@ html, body {
     height: 100vh;
     display: flex;
     justify-content: center;
-
+    position: relative;
 }
 
 .room3-container2{
@@ -305,7 +305,7 @@ html, body {
     height: 100vh;
     display: flex;
     justify-content: center;
-
+    position: relative;
 }
 
 .room3-container3{
@@ -315,6 +315,20 @@ html, body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+.room3-container3 #timer {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #b00;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 8px 20px;
+    border-radius: 10px;
+    z-index: 20;
 }
 
 .enttext {
