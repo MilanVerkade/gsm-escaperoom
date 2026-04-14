@@ -29,9 +29,9 @@
     </ol>
     <h2>Kamer 3:</h2>
     <ol>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Een grote, vuile spiegel waar met een vetkrijtje of onzichtbare inkt op is geschreven."Alleen als je mij recht in de ogen kijkt, zie je de waarheid die achter je ligt."</li>
+        <li>Een rommelig bureau met een openstaande kalender op "Oktober". Er staan cirkels om de 3e, 10e, 17e en 24e. Op een koffiemok in de hoek staat groot het getal +2.</li>
+        <li>Een lade met gereedschap. Er liggen 3 schroevendraaiers, 5 tandwielen en 2 pincetten. Op de bodem van de lade staat gekrast: S x T + P.</li>
     </ol>
 
     <script>
