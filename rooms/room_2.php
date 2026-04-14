@@ -16,7 +16,7 @@ try {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escape Room 2</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=<?= time() ?>">
 </head>
 
 <body>
@@ -30,9 +30,14 @@ try {
     <div class="klik-div2-1">
       <div id="overlay5" class="overlay5">
         <div class="popup5">
-        <img src="../Fotos/escaperoom2/imagecopy4.png" alt="Foto" />
+          <img src="../Fotos/escaperoom2/imagecopy4.png" alt="Foto" />
+          <div class="lock-inputs-container">
+            <input type="number" class="lock-input" id="lock-digit-1" min="0" max="9">
+            <input type="number" class="lock-input" id="lock-digit-2" min="0" max="9">
+            <input type="number" class="lock-input" id="lock-digit-3" min="0" max="9">
+          </div>
+        </div>
       </div>
-    </div>
   </div>
       </div>
     </div>

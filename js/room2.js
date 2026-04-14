@@ -1,7 +1,7 @@
 room1 = document.getElementById("room2-container1");
 room2 = document.getElementById("room2-container2");
 room3 = document.getElementById("room2-container3");
-openRoom2()
+openRoom1()
 
 function openRoom1() {
     room1.style.display = "block";
@@ -46,8 +46,36 @@ popup5.addEventListener('click', (event) => {
     event.stopPropagation(); // Voorkom dat de klik op de popup de overlay sluit
 });
 
+// Controleer de cijferslot code
+const lockInputs = [
+    document.getElementById('lock-digit-1'),
+    document.getElementById('lock-digit-2'),
+    document.getElementById('lock-digit-3')
+];
 
+function checkLock() {
+    const code = lockInputs.map(input => input.value).join('');
+    if (code === '173') {
+        overlay5.style.display = 'none';
+        openRoom3();
+    }
+}
 
+lockInputs.forEach((input, index) => {
+    input.addEventListener('input', (e) => {
+        // Zorg dat we max 1 teken hebben per veld
+        if (e.target.value.length > 1) {
+            e.target.value = e.target.value.slice(-1);
+        }
+        
+        // Auto-focus naar het volgende veld
+        if (e.target.value.length === 1 && index < lockInputs.length - 1) {
+            lockInputs[index + 1].focus();
+        }
+        
+        checkLock();
+    });
+});
 
 // r3
 const klikDiv = document.querySelector('.klik-div3-1');
