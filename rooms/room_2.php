@@ -46,6 +46,7 @@ try {
     <div id="overlay" class="overlay">
       <div class="popup">
         <img src="../Fotos/escaperoom2/afbeelding (1).png" alt="Foto" />
+        <div class="enttext"></div>
       </div>
     </div>
   </div>
