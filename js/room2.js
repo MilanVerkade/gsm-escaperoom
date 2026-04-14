@@ -1,7 +1,7 @@
 room1 = document.getElementById("room2-container1");
 room2 = document.getElementById("room2-container2");
 room3 = document.getElementById("room2-container3");
-openRoom3()
+openRoom1()
 
 function openRoom1() {
     room1.style.display = "block";
@@ -121,4 +121,21 @@ popup.addEventListener('click', (event) => {
 klikDiv3.addEventListener('click', () => {
     window.location.href = "room_3.php";
 });
+
+// Hint knoppen logica
+const hintBtnC2 = document.getElementById('hint-btn-c2');
+const hintTextC2 = document.getElementById('hint-text-c2');
+if(hintBtnC2 && hintTextC2) {
+    hintBtnC2.addEventListener('click', () => {
+        hintTextC2.style.display = (hintTextC2.style.display === 'none' || hintTextC2.style.display === '') ? 'block' : 'none';
+    });
+}
+
+const hintBtnC3 = document.getElementById('hint-btn-c3');
+const hintTextC3 = document.getElementById('hint-text-c3');
+if(hintBtnC3 && hintTextC3) {
+    hintBtnC3.addEventListener('click', () => {
+        hintTextC3.style.display = (hintTextC3.style.display === 'none' || hintTextC3.style.display === '') ? 'block' : 'none';
+    });
+}
 
