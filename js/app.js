@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var timerDivs = document.querySelectorAll('#timer');
   if (!timerDivs.length) return;
   var storedSeconds = localStorage.getItem('timerSeconds');
-  var totalSeconds = storedSeconds ? parseInt(storedSeconds) : 30 * 60;
+  var totalSeconds = storedSeconds ? parseInt(storedSeconds) : 20 * 60;
   
   function updateTimer() {
     var min = Math.floor(totalSeconds / 60);
