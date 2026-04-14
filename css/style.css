@@ -6,7 +6,7 @@
     font-size: 2em;
     font-weight: bold;
     color: #b00;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     padding: 8px 20px;
     border-radius: 10px;
     z-index: 20;
@@ -17,7 +17,7 @@
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(255,255,255,0.85);
+    background: rgba(255, 255, 255, 0.85);
     padding: 24px 32px;
     border-radius: 16px;
     min-width: 320px;
@@ -41,9 +41,11 @@
     color: #222;
     cursor: pointer;
 }
+
 .mirror-btn.hint {
     margin-left: 20px;
 }
+
 .mirror-btn:hover {
     background: #d1d1d1;
 }
@@ -53,6 +55,7 @@
     color: red;
     font-weight: bold;
 }
+
 .mirror-hint-text {
     margin-top: 10px;
     color: #333;
@@ -60,7 +63,8 @@
     font-style: italic;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -68,12 +72,11 @@ html, body {
     overflow: hidden;
 }
 
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
- 
+
 
 .winFoto,
 .verliesFoto {
@@ -104,7 +107,7 @@ html, body {
     object-fit: contain;
 }
 
-.informatiebackgroud{
+.informatiebackgroud {
     background-color: #1B1717;
     color: white;
     margin-top: 9vh;
@@ -114,46 +117,46 @@ html, body {
 }
 
 .nav {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: black;
 }
 
 #nav {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	z-index: 101;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 101;
 }
 
 #nav nav {
-	background-color: black;
-	padding: 10px 20px;
+    background-color: black;
+    padding: 10px 20px;
 }
 
 #nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	gap: 30px;
-	width: calc(100vw - 40px);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    width: calc(100vw - 40px);
 }
 
 #nav li {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #nav a {
-	color: #C9C9C9;
-	font-size: 3.8em;
-	font-weight: bold;
-	text-decoration: none;
+    color: #C9C9C9;
+    font-size: 3.8em;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.room2-container1{
+.room2-container1 {
     background-image: url('../Fotos/escaperoom2/image.png');
     background-size: cover;
     background-position: center;
@@ -162,7 +165,7 @@ html, body {
     justify-content: center;
 }
 
-.room2-container2{
+.room2-container2 {
     background-image: url('../Fotos/escaperoom2/image\ copy.png');
     background-size: cover;
     background-position: center;
@@ -171,7 +174,7 @@ html, body {
     justify-content: center;
 }
 
-.room2-container3{
+.room2-container3 {
     background-image: url('../Fotos/escaperoom2/image\ copy\ 2.png');
     background-size: cover;
     background-position: center;
@@ -182,16 +185,17 @@ html, body {
 .klik-div2-1 {
     width: 25vw;
     height: 10vw;
-    
+
     position: absolute;
     left: 70vw;
     top: 50vh;
+
 }
 
 .klik-div3-1 {
     width: 400px;
     height: 690px;
-    
+
     position: absolute;
     left: 150px;
     top: 108px;
@@ -200,7 +204,7 @@ html, body {
 .klik-div3-2 {
     width: 12vw;
     height: 30vw;
-    
+
     position: absolute;
     left: 85vw;
     top: 16vh;
@@ -217,7 +221,8 @@ html, body {
 
 
 .overlay {
-    display: none; /* Verbergen de overlay standaard */
+    display: none;
+    /* Verbergen de overlay standaard */
     position: fixed;
     top: 0;
     left: 0;
@@ -241,7 +246,8 @@ html, body {
 }
 
 .overlay2 {
-    display: none; /* Verbergen de overlay standaard */
+    display: none;
+    /* Verbergen de overlay standaard */
     position: fixed;
     top: 0;
     left: 0;
@@ -265,7 +271,8 @@ html, body {
 }
 
 .overlay5 {
-    display: none; /* Verbergen de overlay standaard */
+    display: none;
+    /* Verbergen de overlay standaard */
     position: fixed;
     top: 0;
     left: 0;
@@ -288,7 +295,7 @@ html, body {
     max-width: 1600px;
 }
 
-.room3-container1{
+.room3-container1 {
     background-image: url('../Fotos/ecaperoom3/image\ copy.png');
     background-size: cover;
     background-position: center;
@@ -298,7 +305,7 @@ html, body {
     position: relative;
 }
 
-.room3-container2{
+.room3-container2 {
     background-image: url('../Fotos/ecaperoom3/image.png');
     background-size: cover;
     background-position: center;
@@ -342,7 +349,8 @@ html, body {
 
 .lock-inputs-container {
     position: absolute;
-    top: 60%; /* Adjust as needed based on image */
+    top: 60%;
+    /* Adjust as needed based on image */
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -360,7 +368,7 @@ html, body {
     background-color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
     color: #111;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Hide spinners for number input */
@@ -369,6 +377,40 @@ html, body {
     -webkit-appearance: none;
     margin: 0;
 }
+
 .lock-input[type=number] {
     -moz-appearance: textfield;
+}
+
+.hint-button {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px 20px;
+    border-radius: 10px;
+    z-index: 20;
+    cursor: pointer;
+    border: 2px solid #333;
+    transition: background 0.3s;
+}
+
+.hint-text {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 20;
+    display: none;
+    max-width: 300px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
