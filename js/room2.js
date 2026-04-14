@@ -21,6 +21,36 @@ function openRoom3() {
     room3.style.display = "block";
 }
 
+// Container 1 setup
+const answerInput1 = document.getElementById('r2-answer-1');
+const submitBtn1 = document.getElementById('r2-submit-1');
+const feedback1 = document.getElementById('r2-feedback-1');
+const hintBtn1 = document.getElementById('r2-hint-1');
+const hintText1 = document.getElementById('r2-hint-text-1');
+const juisteCode1 = '5';
+
+if (submitBtn1 && answerInput1 && feedback1) {
+    submitBtn1.addEventListener('click', function () {
+        if (answerInput1.value.trim() === juisteCode1) {
+            openRoom2();
+        } else {
+            feedback1.style.color = 'red';
+            feedback1.textContent = 'Fout, probeer opnieuw!';
+        }
+    });
+
+    answerInput1.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') submitBtn1.click();
+    });
+}
+
+if (hintBtn1 && hintText1) {
+    hintBtn1.addEventListener('click', function () {
+        hintText1.textContent = 'Combineer wat je op de muur ziet met het getal dat je ergens anders in de kamer vindt';
+        hintText1.style.display = 'block';
+    });
+}
+
 // r2
 const klikDiv5 = document.querySelector('.klik-div2-1');
 const overlay5 = document.getElementById('overlay5');
