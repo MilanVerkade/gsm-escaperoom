@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var feedback3 = document.getElementById('mirror-feedback-3');
   var hintBtn3 = document.getElementById('mirror-hint-3');
   var hintText3 = document.getElementById('mirror-hint-text-3');
-  var juisteCode3 = '17';
+  var juisteCode3 = '22';
 
   if (submitBtn3 && answerInput3 && feedback3) {
     submitBtn3.addEventListener('click', function () {
