@@ -4,18 +4,30 @@ room3 = document.getElementById("room2-container3");
 openRoom1()
 
 function openRoom1() {
+    if (localStorage.getItem('r2_riddle1_off') === 'true') {
+        openRoom2();
+        return;
+    }
     room1.style.display = "block";
     room2.style.display = "none";
     room3.style.display = "none";
 }
 
 function openRoom2() {
+    if (localStorage.getItem('r2_riddle2_off') === 'true') {
+        openRoom3();
+        return;
+    }
     room1.style.display = "none";
     room2.style.display = "block";
     room3.style.display = "none";
 }
 
 function openRoom3() {
+    if (localStorage.getItem('r2_riddle3_off') === 'true') {
+        window.location.href = "room_3.php";
+        return;
+    }
     room1.style.display = "none";
     room2.style.display = "none";
     room3.style.display = "block";
