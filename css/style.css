@@ -193,6 +193,182 @@ body {
     position: relative;
 }
 
+.room1-container1 {
+    background-image: url('../Fotos/escaperoom1/escaperoombg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.room1-wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 32px 24px 80px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.room1-panel {
+    background: rgba(12, 16, 12, 0.72);
+    border-radius: 18px;
+    padding: 22px 22px 28px;
+}
+
+.room1-header {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.room1-header h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    letter-spacing: 1px;
+    margin: 0;
+    color: #f2e6c9;
+}
+
+.room1-header p {
+    margin: 0;
+    max-width: 700px;
+    color: rgba(242, 230, 201, 0.8);
+    font-size: 1.05rem;
+}
+
+.room1-container1 .timer {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #7fa46a;
+    background: rgba(16, 21, 16, 0.75);
+    padding: 8px 16px;
+    border-radius: 12px;
+    z-index: 10;
+}
+
+.room1-container1 .trail {
+    display: grid;
+    gap: 12px;
+    margin: 24px 0 32px;
+    background: rgba(16, 21, 16, 0.55);
+    border-radius: 18px;
+    padding: 18px 22px;
+}
+
+.room1-container1 .trail span {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: rgba(242, 230, 201, 0.75);
+}
+
+.room1-container1 .trail span.active {
+    color: #f2e6c9;
+    font-weight: 600;
+}
+
+.room1-container1 .step {
+    display: none;
+    background: rgba(16, 21, 16, 0.62);
+    border-radius: 22px;
+    padding: 26px 28px;
+    margin-bottom: 22px;
+}
+
+.room1-container1 .step.is-active {
+    display: block;
+}
+
+.room1-container1 .step h2 {
+    margin: 0 0 10px;
+    color: #f2e6c9;
+    font-size: 1.5rem;
+}
+
+.room1-container1 .step p {
+    margin: 0 0 18px;
+    color: rgba(242, 230, 201, 0.8);
+}
+
+.room1-container1 .step .clue {
+    display: grid;
+    gap: 10px;
+    background: rgba(127, 164, 106, 0.12);
+    border-radius: 14px;
+    padding: 16px 18px;
+    color: rgba(242, 230, 201, 0.9);
+}
+
+.room1-container1 .answer-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.room1-container1 .answer-row input {
+    flex: 1 1 220px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    color: #f2e6c9;
+    font-size: 1rem;
+    outline: none;
+}
+
+.room1-container1 .answer-row button {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #7fa46a;
+    color: #101510;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.room1-container1 .feedback {
+    margin-top: 12px;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+.room1-container1 .finale {
+    text-align: center;
+}
+
+.room1-container1 .finale h2 {
+    font-size: 1.8rem;
+}
+
+.room1-container1 .finale .badge {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(242, 230, 201, 0.15);
+    color: #f2e6c9;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+    .room1-container1 .timer {
+        position: static;
+        width: fit-content;
+        margin: 0 0 18px auto;
+    }
+
+    .room1-wrap {
+        padding: 24px 18px 60px;
+    }
+}
+
 .klik-div2-1 {
     width: 25vw;
     height: 10vw;

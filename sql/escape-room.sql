@@ -42,9 +42,9 @@ CREATE TABLE IF NOT EXISTS `riddles` (
 --
 
 INSERT INTO `riddles` (`id`, `riddle`, `answer`, `hint`, `roomId`) VALUES
-(1, 'Welke Pokémon is nummer 25 in de Pokédex?', 'Pikachu', 'Het is de mascotte van Pokémon.', 1),
-(2, 'Wat is het type van Charmander?', 'Vuur', 'Denk aan zijn vlammende staart.', 1),
-(3, 'Hoe heet de evolutie van Bulbasaur?', 'Ivysaur', 'Het zit tussen Bulbasaur en Venusaur.', 1),
+(1, 'Ik strek me uit, maar ga nergens heen, Met deuren vol geheimen, één voor één. Je loopt over mij, keer op keer, Ik leid je verder, telkens weer. Wat ben ik?', 'Een gang', 'Je staat er al in.', 1),
+(2, 'Ik hang hier stil en zeg geen woord, Maar toon je gezicht zoals het hoort. In smalle paden help ik zien, Maar wat je ziet… is misschien niet wat het lijkt. Wat ben ik?', 'Een spiegel', 'Je kan je eigen reflectie door mij zien.', 1),
+(3, 'Ik sta tussen hier en daar, Gesloten of open, altijd klaar. Draai me links of draai me rechts, Zonder mij kom je nergens echt. Wat ben ik?', 'Een deur', 'Je moet er doorheen om verder te gaan.', 1),
 (4, 'Wat is de 4-cijferige toegangscode?', '05121926', 'De kalender vertelt de dagen, maar de mok vertelt de waarheid.', 2),
 (5, 'Alleen als je mij recht in de ogen kijkt, zie je de waarheid die achter je ligt.', '5415', 'Een spiegel laat je niet zien wat er in de spiegen zit, maar wat er voor staat. Wat bevindt zich precies achter je rug als je in de spiegel kijkt?', 2),
 (6, 'Ik heb geen stem, maar vertel je wanneer het einde nabij was. Mijn wijzers bewogen voor het laatste toen de laatste bewoner de deur dichttrok\r\n', '10:12', 'Kijk goed naar de details in de kamer. Niet alles wat kapot is, is waardeloos. Sommige objecten zijn bevroren op het belangrijkste moment van de dag.', 2),
