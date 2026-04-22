@@ -612,7 +612,6 @@ body {
     z-index: 100;
 }
 
-/* Review Pagina Styling */
 .review-container {
     background-image: url('../Fotos/huis.png');
     background-size: cover;
@@ -652,7 +651,6 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 10px;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -672,12 +670,6 @@ body {
     color: #333;
 }
 
-.form-group textarea {
-    background: rgba(255, 255, 255, 0.9);
-    color: #333;
-    resize: vertical;
-    min-height: 100px;
-}
 
 .form-group input:focus,
 .form-group textarea:focus {
@@ -699,9 +691,7 @@ body {
     border-radius: 8px;
     font-size: 1.1em;
     font-weight: bold;
-    text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.3s ease;
     letter-spacing: 1px;
 }
 
@@ -712,7 +702,6 @@ body {
 
 .btn-submit:hover {
     background: rgba(255, 255, 255, 0.9);
-    transform: scale(1.05);
 }
 
 .btn-cancel {
@@ -723,5 +712,4 @@ body {
 
 .btn-cancel:hover {
     background: rgba(255, 255, 255, 0.5);
-    transform: scale(1.05);
 }
