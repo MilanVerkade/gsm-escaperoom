@@ -537,7 +537,7 @@ body {
 .lock-inputs-container {
     position: absolute;
     top: 60%;
-    /* Adjust as needed based on image */
+
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -558,7 +558,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Hide spinners for number input */
 .lock-input::-webkit-outer-spin-button,
 .lock-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -634,11 +633,7 @@ body {
 .review-title {
     text-align: center;
     color: white;
-    font-size: 3em;
-    font-weight: bold;
     margin-bottom: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    letter-spacing: 2px;
 }
 
 .form-group {
@@ -648,10 +643,9 @@ body {
 .form-group label {
     display: block;
     color: white;
-    font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 10px;
-    letter-spacing: 1px;
+    
 }
 
 .form-group input,
@@ -660,22 +654,7 @@ body {
     padding: 15px;
     border: none;
     border-radius: 8px;
-    font-size: 1em;
-    font-family: Arial, sans-serif;
     box-sizing: border-box;
-}
-
-.form-group input {
-    background: rgba(255, 255, 255, 0.9);
-    color: #333;
-}
-
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    background: white;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .button-group {
@@ -685,31 +664,14 @@ body {
 }
 
 .btn {
-    flex: 1;
     padding: 15px;
     border: none;
     border-radius: 8px;
-    font-size: 1.1em;
-    font-weight: bold;
     cursor: pointer;
-    letter-spacing: 1px;
 }
 
 .btn-submit {
     background: white;
     color: #333;
-}
-
-.btn-submit:hover {
-    background: rgba(255, 255, 255, 0.9);
-}
-
-.btn-cancel {
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-    border: 2px solid white;
-}
-
-.btn-cancel:hover {
-    background: rgba(255, 255, 255, 0.5);
+    
 }
