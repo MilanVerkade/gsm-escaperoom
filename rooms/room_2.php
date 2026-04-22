@@ -67,7 +67,6 @@
   <div class="klik-div3-3">
 </div>
 <script>
-  // Reset de timer voor room 2
   localStorage.removeItem('timerSeconds');
 </script>
 <script src="../js/room2.js"></script>
