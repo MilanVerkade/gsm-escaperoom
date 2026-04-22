@@ -77,12 +77,8 @@
             let el = document.getElementById("raadsel" + num);
             let btn = document.getElementById("btn-raadsel" + num);
             if (newState === 'true') {
-                el.style.textDecoration = "line-through";
-                el.style.color = "red";
                 btn.innerText = "Raadsel " + num + " is UIT (Zet Aan)";
             } else {
-                el.style.textDecoration = "none";
-                el.style.color = "";
                 btn.innerText = "Raadsel " + num + " is AAN (Zet Uit)";
             }
         }
@@ -95,12 +91,8 @@
             let el = document.getElementById("raadsel3_" + num);
             let btn = document.getElementById("btn-raadsel3_" + num);
             if (newState === 'true') {
-                el.style.textDecoration = "line-through";
-                el.style.color = "red";
                 btn.innerText = "Raadsel " + num + " is UIT (Zet Aan)";
             } else {
-                el.style.textDecoration = "none";
-                el.style.color = "";
                 btn.innerText = "Raadsel " + num + " is AAN (Zet Uit)";
             }
         }
