@@ -11,11 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
         $stmt = $db_connection->prepare($sql);
         $stmt->execute([$beoordeling, $moeilijkheid, $review]);
-        
-        // STAP 1: Stuur de gebruiker door naar zichzelf (of een succes-pagina)
         header("Location: " . $_SERVER['PHP_SELF'] . "?status=success");
-        exit(); // Zorg dat de rest van het script stopt
-        
+        exit(); 
     } catch (PDOException $e) {
         echo "Fout bij het plaatsen van review: " . $e->getMessage();
     }

@@ -28,7 +28,7 @@ if (submit1) {
         if (input1.value.trim() === '5') {
             toonKamer(1);
         } else {
-            alert("Fout, probeer opnieuw!"); 
+            document.getElementById("r2-feedback-1").innerHTML = "Fout, probeer opnieuw!"
         }
     };
 }
