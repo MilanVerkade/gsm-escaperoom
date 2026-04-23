@@ -187,10 +187,13 @@ body {
 
 .room2-container3 {
     background-image: url('../Fotos/escaperoom2/image\ copy\ 2.png');
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../Fotos/escaperoom2/image\ copy\ 2.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    position: relative;
+    background-repeat: no-repeat;
 }
 
 .room1-container1 {
