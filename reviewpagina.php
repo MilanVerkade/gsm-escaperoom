@@ -1,7 +1,23 @@
 <?php
 require_once('dbcon.php');
 
-// PHP code voor review verwerking kan hier komen
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // 1. Collect and sanitize input
+    $beoordeling = $_POST['beoordeling'];
+    $moeilijkheid = $_POST['moeilijkheid'];
+    $review = ($_POST['review']);
+
+    $sql = "INSERT INTO review (beoordeling, moeilijkheid, review_text) VALUES (?, ?, ?)";
+    
+    try {
+        $stmt = $db_connection->prepare($sql);
+        $stmt->execute([$beoordeling, $moeilijkheid, $review]);
+        
+        echo "<script>alert('Review succesvol geplaatst!');</script>";
+    } catch (PDOException $e) {
+        echo "Fout bij het plaatsen van review: " . $e->getMessage();
+    }
+}
 ?>
 
 <!DOCTYPE html>

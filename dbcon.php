@@ -1,8 +1,8 @@
 <?php
 $server = "localhost"; 
 $username = "root";
-$password = "";  //macbook gebruikers vullen bij wachtwoord "root" in.
-$db = "escape-room"; //pas dit aan indien de naam van jullie database anders is
+$password = "root";  //macbook gebruikers vullen bij wachtwoord "root" in.
+$db = "project"; //pas dit aan indien de naam van jullie database anders is
 
 try {
   $db_connection = new PDO("mysql:host=$server; dbname=$db", $username, $password);
@@ -10,3 +10,4 @@ try {
 } catch (PDOException $e) {
   echo "Verbinding mislukt" . $e->getMessage();
 }
+?>
