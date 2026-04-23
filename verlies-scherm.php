@@ -11,5 +11,9 @@
     <img src="Fotos/rood.png" alt="Verlies scherm">
     <img src="Fotos/verlies-foto.png" alt="">
 </div>
+
+<div class="review-btn-container">
+    <button onclick="window.location.href='reviewpagina.php'" class="btn review-btn">Laat een review achter</button>
+</div>
 </body>
 </html> 

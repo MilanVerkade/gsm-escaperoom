@@ -13,6 +13,10 @@
 <p id="eindtijd" class="eindtijd"></p>
 </div>
 
+<div class="review-btn-container">
+    <button onclick="window.location.href='reviewpagina.php'" class="btn review-btn">Laat een review achter</button>
+</div>
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var storedSeconds = localStorage.getItem('timerSeconds');
