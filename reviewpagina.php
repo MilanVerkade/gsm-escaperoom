@@ -2,10 +2,9 @@
 require_once('dbcon.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // 1. Collect and sanitize input
     $beoordeling = $_POST['beoordeling'];
     $moeilijkheid = $_POST['moeilijkheid'];
-    $review = ($_POST['review']);
+    $review = $_POST['review'];
 
     $sql = "INSERT INTO review (beoordeling, moeilijkheid, review_text) VALUES (?, ?, ?)";
     
@@ -13,11 +12,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt = $db_connection->prepare($sql);
         $stmt->execute([$beoordeling, $moeilijkheid, $review]);
         
-        echo "<script>alert('Review succesvol geplaatst!');</script>";
+        // STAP 1: Stuur de gebruiker door naar zichzelf (of een succes-pagina)
+        header("Location: " . $_SERVER['PHP_SELF'] . "?status=success");
+        exit(); // Zorg dat de rest van het script stopt
+        
     } catch (PDOException $e) {
         echo "Fout bij het plaatsen van review: " . $e->getMessage();
     }
 }
+
+
 ?>
 
 <!DOCTYPE html>
