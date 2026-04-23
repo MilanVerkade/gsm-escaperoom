@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
 
         <div class="form-group">
-          <label for="moeilijkheid">Moeilijkheid (1/M 10)</label>
+          <label for="moeilijkheid">Moeilijkheid (1 T/M 10)</label>
           <input type="number" id="moeilijkheid" name="moeilijkheid" min="1" max="10"
             placeholder="Voer moeilijkheid in..." required>
         </div>
