@@ -1,7 +1,7 @@
 <?php
 $server = "localhost"; 
 $username = "root";
-$password = "root";  //macbook gebruikers vullen bij wachtwoord "root" in.
+$password = "";  //macbook gebruikers vullen bij wachtwoord "root" in.
 $db = "project"; //pas dit aan indien de naam van jullie database anders is
 
 try {
