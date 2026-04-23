@@ -17,7 +17,7 @@
     <button id="r2-submit-1" class="mirror-btn">Antwoord</button>
     <button id="r2-hint-1" class="mirror-btn hint">Hint</button>
     <div id="r2-feedback-1" class="mirror-feedback"></div>
-    <div id="r2-hint-text-1" class="mirror-hint-text"></div>
+    <div id="r2-hint-text-1" class="mirror-hint-text">Kijk goed naar de spiegel in de kamer. Tel het aantal objecten dat je ziet weerspiegeld.</div>
   </div>
 </div>
 
