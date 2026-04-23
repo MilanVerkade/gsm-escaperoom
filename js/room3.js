@@ -33,7 +33,6 @@ function openRoom3() {
     room3.style.display = "block";
 }
 
-// Haal de elementen op
 const klikDiv = document.querySelector('.klik-div3-1');
 const klikDiv2 = document.querySelector('.klik-div3-2');
 const klikDiv3 = document.querySelector('.klik-div3-3');
@@ -41,45 +40,37 @@ const overlay = document.getElementById('overlay');
 const overlay2 = document.getElementById('overlay2');
 const popup = document.querySelector('.popup');
 const popup2 = document.querySelector('.popup2');
-overlay.style.display = 'none'; // Verberg de overlay
-overlay2.style.display = 'none'; // Verberg de overlay
+overlay.style.display = 'none'; 
+overlay2.style.display = 'none'; 
 
-// Wanneer je op de klikDiv klikt, toon de overlay
 klikDiv.addEventListener('click', () => {
-    overlay.style.display = 'flex'; // Toon de overlay
+    overlay.style.display = 'flex'; 
 });
 
-// Wanneer je op de klikDiv klikt, toon de overlay
 klikDiv2.addEventListener('click', () => {
-    overlay2.style.display = 'flex'; // Toon de overlay
+    overlay2.style.display = 'flex'; 
 });
 
-// Wanneer je op de overlay zelf (buiten de foto) klikt, sluit de overlay
 overlay.addEventListener('click', (event) => {
-    // Als het doel van de klik buiten de foto ligt (en niet op de popup), sluit de overlay
     if (event.target === overlay) {
-        overlay.style.display = 'none'; // Verberg de overlay
+        overlay.style.display = 'none'; 
         event.stopPropagation();
     }
 });
 
-// Wanneer je op de overlay2 zelf (buiten de foto) klikt, sluit de overlay
 overlay2.addEventListener('click', (event) => {
-    // Als het doel van de klik buiten de foto ligt (en niet op de popup), sluit de overlay
     if (event.target === overlay2) {
-        overlay2.style.display = 'none'; // Verberg de overlay
+        overlay2.style.display = 'none'; 
         event.stopPropagation();
     }
 });
 
-// Zorg ervoor dat klikken op de popup zelf het sluiten niet voorkomt
 popup2.addEventListener('click', (event) => {
-    event.stopPropagation(); // Voorkom dat de klik op de popup de overlay sluit
+    event.stopPropagation();
 });
 
-// Zorg ervoor dat klikken op de popup zelf het sluiten niet voorkomt
 popup.addEventListener('click', (event) => {
-    event.stopPropagation(); // Voorkom dat de klik op de popup de overlay sluit
+    event.stopPropagation(); 
 });
 
 klikDiv3.addEventListener('click', () => {
